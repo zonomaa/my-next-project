@@ -6,7 +6,7 @@ import { auth } from 'utils/firebase/auth';
 function Index() {
   return (
     <>
-      <h1>GALBA</h1>
+      <h1>My Next Project</h1>
       <UserStateInfo />
 
       <button onClick={() => auth.signOut()}>ログアウト</button>
