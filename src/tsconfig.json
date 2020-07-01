@@ -10,10 +10,11 @@
       ]
     },
     "sourceMap": true,
-    "target": "es5",
-    "module": "es2015",
+    "target": "es6",
+    "module": "esnext",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "isolatedModules": false,
     "jsx": "react",
     "lib": [
       "es2020",
@@ -21,7 +22,7 @@
     ],
     "typeRoots": [
       "../node_modules/@types",
-      "./types",
-    ],
-  },
+      "./types"
+    ]
+  }
 }

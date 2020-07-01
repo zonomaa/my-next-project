@@ -3,7 +3,8 @@ const path = require('path');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  target: 'serverless',
+  // target: 'serverless',
+  exportTrailingSlash: process.env.NODE_ENV !== 'development',
   webpack: (config, options) => {
     const { dir } = options;
     /**
@@ -44,5 +45,8 @@ module.exports = {
     );
 
     return config;
+  },
+  env: {
+    mode: process.env.NODE_ENV === 'development' ? 'dev' : 'prod',
   },
 };
