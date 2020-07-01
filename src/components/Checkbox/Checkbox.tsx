@@ -1,8 +1,8 @@
 import React from 'react';
 import CheckboxButton from 'components/Common/CheckboxButton';
-import { ReactHooksFormProps } from 'Types/reactHookFormProps';
 import { CheckboxStyle, CheckboxStyleProps } from './style';
-import { InputElementProps } from 'Types/HTMLElementProps';
+import { ReactHooksFormProps } from 'types/reactHookFormProps';
+import { InputElementProps } from 'types/HTMLElementProps';
 
 export type CheckboxProps = InputElementProps &
   ReactHooksFormProps &
